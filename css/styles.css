@@ -1,4 +1,16 @@
-#story {
+#letter {
   display: none;
 }
- 
+
+ul {
+  margin-top: 20px;
+}
+
+li {
+  list-style: none;
+  margin-left: -40px;;
+}
+
+#dear-indent {
+  margin-top: 25px;
+}

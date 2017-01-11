@@ -6,46 +6,50 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title>Mad Libs</title>
+    <title>Sweet Form Letter</title>
   </head>
   <body>
     <div class="container">
-      <h1>Fill in the blanks to write your story!</h1>
+      <h1>Auto create an inspiring letter!</h1>
       <div id="blanks">
         <form>
           <div class="form-group">
-            <label for="celebrity1">A celebrity</label>
-            <input id="celebrity1" class="form-control" type="text">
+            <label for="name">Your full name</label>
+            <input id="name" class="form-control" type="text">
           </div>
           <div class="form-group">
-            <label for="person1">A name</label>
-            <input id="person1" class="form-control" type="text">
+            <label for="streetAddress">Your street address</label>
+            <input id="streetAddress" class="form-control" type="text">
           </div>
           <div class="form-group">
-            <label for="animal">An animal</label>
-            <input id="animal" class="form-control" type="text">
+            <label for="city">Your city</label>
+            <input id="city" class="form-control" type="text">
           </div>
           <div class="form-group">
-            <label for="exclamation">An exclamation</label>
-            <input id="exclamation" class="form-control" type="text">
+            <label for="state">Your state</label>
+            <input id="state" class="form-control" type="text">
           </div>
           <div class="form-group">
-            <label for="verb">A past tense verb</label>
-            <input id="verb" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="noun">A noun</label>
-            <input id="noun" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="adjective">A adjective</label>
-            <input id="adjective" class="form-control" type="text">
+            <label for="zipcode">Your zipcode</label>
+            <input id="zipcode" class="form-control" type="text">
           </div>
 
-          <button type="submit" class="btn">Show me the story!</button>
+
+          <button type="submit" class="btn">Create the letter!</button>
         </form>
       </div>
-      <div id="story">Recently at the golden globes, <span class="person1"></span> was in the middle of their acceptance speech when, suddenly, <span class="celebrity1"></span> parachuted in through the glass window in the ceiling. "<span class="exclamation"></span>!" cried <span class="person1"></span>, as <span class="celebrity1"></span> effortlessly landed behind the podium, holding a <span class="adjective"></span> <span class="animal"></span> in their arms. Sputtering with surpise, <span class="person1"></span> handed <span class="celebrity1"></span> a <span class="noun"></span> and <span class="verb"></span> off the stage.
+      <div id="letter">
+        <ul>
+          <li class="name"></li>
+          <li class="streetAddress"></li>
+          <li><span class="city"></span>, <span class="state"></span> <span class="zipcode"></span></li>
+        </ul>
+        <p id="dear-indent">
+          Dear, <span class="name"></span>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
       </div>
   </body>
 </html>

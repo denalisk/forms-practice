@@ -1,22 +1,18 @@
 $(document).ready(function() {
   $("#blanks form").submit(function(event) {
-    var celebrity1Input = $("input#celebrity1").val();
-    var person1Input = $("input#person1").val();
-    var animalInput = $("input#animal").val();
-    var exclamationInput = $("input#exclamation").val();
-    var verbInput = $("input#verb").val();
-    var nounInput = $("input#noun").val();
-    var adjectiveInput = $("input#adjective").val();
+    var nameInput = $("input#name").val();
+    var streetAddressInput = $("input#streetAddress").val();
+    var cityInput = $("input#city").val();
+    var stateInput = $("input#state").val();
+    var zipcodeInput = $("input#zipcode").val();
 
-    $(".celebrity1").text(celebrity1Input);
-    $(".person1").text(person1Input);
-    $(".animal").text(animalInput);
-    $(".exclamation").text(exclamationInput);
-    $(".verb").text(verbInput);
-    $(".noun").text(nounInput);
-    $(".adjective").text(adjectiveInput);
+    $(".name").text(nameInput);
+    $(".streetAddress").text(streetAddressInput);
+    $(".city").text(cityInput);
+    $(".state").text(stateInput);
+    $(".zipcode").text(zipcodeInput);
 
-    $("#story").show();
+    $("#letter").show();
 
     event.preventDefault();
 
